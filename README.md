@@ -1,3 +1,14 @@
+# How To Install
+### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
+- for version `1.0.5`
+```json
+"com.google.signin" : "https://github.com/unity-package/google-signin-unity.git#1.0.5",
+```
+- dependency `external-dependency-manager 1.2.186`
+```json
+"com.unity.nuget.newtonsoft-json": "3.2.1",
+"com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm#v1.2.186",
+```
 # Forked to upgrade base library to newer version
 
 https://developer.android.com/identity/sign-in/legacy-gsi-migration
@@ -23,20 +34,6 @@ Also, this new system seem like it did not support email hint. And now require W
             ClientSecret = "XXXXXX-xxxXXXxxxXXXxxx-xxxxXXXXX" // optional for windows/macos and test in editor
 #endif
         };
-```
-
-Tested in unity 2021.3.21 and unity 6000.0.5
-
-Add UPM dependency with branch tag `https://github.com/Thaina/google-signin-unity.git#newmigration`
-
-```json
-{
-  "dependencies": {
-    "com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm",
-    "com.google.signin": "https://github.com/Thaina/google-signin-unity.git#newmigration",
-    ...
-  }
-}
 ```
 
 Also, [New version of iOS recommend](https://developers.google.com/identity/sign-in/ios/quick-migration-guide#google_sign-in_sdk_v700) that we should set `GIDClientID` and `GIDServerClientID` into Info.plist
