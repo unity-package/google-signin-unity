@@ -2,7 +2,7 @@
 ### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
 - for version `1.0.5`
 ```json
-"com.google.signin" : "https://github.com/unity-package/google-signin-unity.git#1.0.5",
+"com.google.signin" : "https://github.com/unity-package/google-signin-unity.git?path=upm#1.0.5",
 ```
 - dependency `external-dependency-manager 1.2.186`
 ```json
